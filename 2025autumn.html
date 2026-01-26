@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Theory Seminar</title>
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sugina-dev/latin-modern-web@1.0.1/style/latinmodern-sans.css" />
+    <link rel="stylesheet" type="text/css" href="table.css">
+
+    <script>
+	MathJax = {
+	    tex: {
+		inlineMath: [['$', '$'], ['\\(', '\\)']],
+		displayMath: [['$$', '$$'], ['\\[', '\\]']],
+		processEscapes: true,
+		processEnvironments: true
+	    },
+	    options: {
+		skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+	    }
+	};
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <style>
+	.content {
+	    margin: auto;
+	    padding-right: 1em;
+	    padding-left: 1em;
+	    max-width: 65em;
+	    line-height: 148%;
+	    font-family: Latin Modern Sans, Helvetica, Arial, Georgia, "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", sans-serif;
+	}
+
+	.intro {
+	    margin-top: 2em;
+	    margin-bottom: 2em;
+	    line-height: 1.6;
+	}
+	table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    vertical-align: top;
+    word-wrap: break-word;
+    padding: 4px 6px;
+}
+
+/* 列宽分配 */
+th:nth-child(1), td:nth-child(1) {
+    width: 22%;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 18%;
+}
+
+th:nth-child(3), td:nth-child(3) {
+    width: 60%;
+}
+
+    </style>
+</head>
+<body>
+  <div class="content">
+	<h1>数论讨论班</h1>
+	<p style="font-size: 1.1em; margin-top: 0.5em; margin-bottom: 0;">A joint seminar of <a href="https://math.fudan.edu.cn/main.htm">SMS</a>, <a href="https://scms.fudan.edu.cn/">SCMS</a> and <a href="https://www.simis.cn/">SIMIS</a></p>
+	<div class="intro">
+	    <p>组织者: <a href="https://scms.fudan.edu.cn/info/1932/6149.htm">陈苗芬</a>, <a href="https://yichenqin.net/">秦翊宸</a>, <a href="https://rufeir.github.io/Rufei_Ren/">任汝飞</a>, <a href="https://wanghaining11.github.io/">王海宁</a>, <a href="https://wangyupeng-wyp.github.io"/> 王宇鹏</a>, <a href="https://sites.google.com/view/ylf/home">易灵飞</a>, <a href="https://zhangdingxin.gitlab.io/math/">张鼎新</a></p>
+	</div> 
+	<h2 href=>Upcoming Talks</h2>
+	Please see the <a href="index.html "> main page</a> for upcoming talks.
+    <!-- Past Talks -->
+    <!-- Past Talks -->
+    <h2>2025-2026 Autumn</h2>
+	<table border="none" cellspacing="0" cellpadding="6" rules="groups" frame="border">
+	    <thead>
+		<tr>
+		  <th>时间 / 地点</th>
+		  <th>报告人</th>
+		  <th style="width:70%">题目 / 摘要</th>
+		</tr>
+	    </thead>
+	    <tbody>
+		<tr>
+		  <td style="white-space: nowrap;">
+		    <p> 9月26日 (周五) </p>
+		    <p> 16:00–17:00 </p>
+		    <p> <a href="https://j.map.baidu.com/5a/dss">光华楼东主楼</a> 1601 </p>
+		  </td>
+		  <td style="white-space: nowrap;">
+		    <p><a href="https://ims.shanghaitech.edu.cn/2022/0916/c4741a842583/page.htm">丁之元</a></p>
+		    <p> <span style="font-family: 'STFangsong', sans-serif; font-size: 90%;">(上海科技大学)</span> </p> </td>
+		  <td><p><b>Title.</b> Reducedness of twisted loop groups</p>
+		    <p> <b>Abstract.</b> In this talk, we give an elementary
+		    proof of the reducedness of twisted loop groups. We
+		    use standard results about structures of algebraic
+		    groups and group schemes without referring to
+		    mixed characteristic.</p></td>
+		</tr>
+
+		<tr>
+		  <td style="white-space: nowrap;">
+		    <p> 10月17日 (周五) </p>
+		    <p> 16:00–17:00 </p>
+		    <p> <a href="https://j.map.baidu.com/85/Awgi">SIMIS</a> 1210 </p>
+		  </td>
+		  <td style="white-space: nowrap;">
+		    <p> <a href="http://shizhang.li/about%20me.html">李时璋</a></p>
+		    <p><span style="font-family: 'STFangsong', 'FangSong', sans-serif; font-size: 90%;">(中科院晨兴数学中心)</span></p>
+		  </td>
+		  <td>
+		    <p><b>Title.</b> On the cohomology of rational
+		      \(p\)-adic local systems </p>
+
+		    <p><b>Abstract.</b>
+		      In \(p\)-adic geometry, there are more
+		      mysterious rational \(p\)-adic local systems
+		      than in algebraic/complex geometry, for example,
+		      the analytification of \(\mathbb{P}^1\) is no
+		      longer simply connected due to existence of a
+		      rank 2 rational \(p\)-adic local system. The
+		      cohomology of such local systems were studied
+		      previously by Kedlaya–Liu and more recently by
+		      Anschütz–Le Bras–Mann. In this talk, we shall
+		      see a (relatively) low-tech approach to reprove
+		      some of KL/ALBM results. This is a report of an
+		      ongoing work joint with
+		      Nizioł–Reinecke–Zavyalov.</p></td>
+		</tr>
+
+		<tr>
+		  <td>
+		    <p> <a href="./misc/fresan.jpg">复旦大学数学科学学院杰出学者讲坛</a></p>
+		    <p>10月21日 (周二)</p>
+		    <p> 16:00–17:00 </p>
+		    <p> <a href="https://j.map.baidu.com/5a/dss">光华楼东主楼</a> 2201 </p>
+		  </td>
+		  <td><a href="http://javier.fresan.perso.math.cnrs.fr/">Javier Fresán </a> <p>
+		    <span style="font-size: 85%;">(Sorbonne Université)</span></p>
+		  </td>
+		  <td>
+		    <p><b>Title.</b> Infinitely Many Non-Hypergeometric Local Systems</p>
+
+		    <p><b>Abstract.</b>  The Bombieri-Dwork conjecture
+predicts that an irreducible differential operator with a G-function
+solution comes from geometry, that is, encodes how periods vary in a
+pencil of algebraic varieties. This conjecture is completely open for
+operators of order at least 2. At the beginning of the 90s, Dwork
+proposed a strategy to establish the conjecture for G-operators of
+order 2, which would consist in proving that they are all pullbacks by
+a correspondence of some Gauss's hypergeometric differential
+operator. Sporadic counterexamples to this expectation were found by
+Krammer (1996) and Bouw-Möller (2010). I will present a joint work
+with Josh Lam and Yichen Qin where we prove that most G-operators of
+order 2 coming from geometry are not pullbacks of hypergeometric
+differential operators. A key ingredient to construct infinitely many
+counterexamples will be the André-Pink-Zannier conjecture for Shimura
+varieties, in the cases recently established by Richard and Yafaev.</p>
+		  </td>
+		</tr>
+
+		<tr>
+		  <td><p>10月28日 (周二)</p>
+		    <!-- 10月底 周二 -->
+			    <p> 16:00–17:00 </p>
+		    <p> <a href="https://j.map.baidu.com/85/Awgi">SIMIS</a> 1110 </p>
+		  </td>
+		  <td><a href="https://ams.cnu.edu.cn/rydw/jyry/f6df253f3c16421c907231b6e63a2a84.htm">蔡　立</a> <br>
+		    <span style="font-family: 'STFangsong', 'FangSong', sans-serif; font-size: 90%;">(首都师范大学)</span>
+		  </td>
+		  <td>
+				    <p><b>Title.</b> Automorphic Green Currents and Applications
+
+				    <p><b>Abstract.</b>  Green
+currents gives the arithmetic intersection theory at the archimedean
+places. In this talk, we consider Green currents for Shimura varieties
+and its applications to special value formulae. This is based on a
+joint work with Ye Tian and Hang Yin.</td>
+		</tr>
+
+		<tr>
+		  <td><p>11月4日 (周二)</p>
+		    <!-- 10月或12月 周二 -->
+			    <p> 16:00–17:00 </p>
+		    <p> <a href="https://j.map.baidu.com/85/Awgi">SIMIS</a> 1410 </p>
+		  </td>
+		  <td><a href="https://algnt.lab.westlake.edu.cn/">赵以庚</a>
+		    <br><span style="font-family: 'STFangsong', 'FangSong', sans-serif; font-size: 90%;">(西湖大学)</span>
+		  </td>
+		  <td>
+		    <p><b>Title.</b> On Swan classes for constructible étale sheaves</p>
+
+		    <p><b>Abstract.</b> For constructible étale sheaves on
+		    varieties over fields of positive characteristic,
+		    the Swan class extends the Swan conductor to a
+		    0-cycle, serving as an invariant that measures
+		    ramification. Using different approaches,
+		    Kato-Saito and Saito have constructed two versions
+		    of the Swan class. In this talk, we introduce a
+		    new cohomological Swan class and investigate
+		    Saito's conjecture on its uniqueness. This is a
+		    joint work with Enlin Yang.</p>
+		    </td>
+		</tr>
+
+
+
+		<tr>
+		  <td>
+		    <p>11月14日 (周五)</p>
+		    <!-- 11月第一周以后, 周五 -->
+		    <p> 16:00–17:00 </p>
+		    <p> <a href="https://j.map.baidu.com/85/Awgi">SIMIS</a> 1210 </p>
+		  </td>
+		  <td><a href="https://www.hengdumath.com/">杜　衡</a><br>
+		    <span style="font-family: 'STFangsong', 'FangSong', sans-serif; font-size: 90%;">(清华大学)</span>
+		  </td>
+		  <td>
+		    <p><b>Title.</b> A Prismatic Herr Complex for Bloch–Kato Selmer Groups</p>
+		    <p><b>Abstract.</b>  Bloch–Kato Selmer groups
+		      encode subtle arithmetic information of \(p\)-adic
+		      Galois representations. Classically, Herr’s
+		      complex is a concrete complex that computes
+		      Galois cohomology via the theory of
+		      \((\varphi,\Gamma)\)-modules. In this talk, I will
+		      introduce a prismatic Herr complex, an explicit
+		      complex built from the prismatic
+		      \((\varphi,\hat{G})\)-module attached to a
+		      (log-)crystalline representation. I will
+		      describe how this complex computes the
+		      Bloch–Kato Selmer group. If time permits, I will
+		      also discuss work in progress toward showing
+		      that this complex computes the cohomology of a
+		      corresponding F-gauge of the crystalline
+		      representation up to inverting \(p\). The talk is
+		      based on joint work with Luming Zhao.
+		    </p>
+		  </td>
+		</tr>
+
+		<tr>
+		  <td>
+		    <p>11月21日 (周五)</p>
+		    <p> 16:00–17:00 </p>
+		    <p> <a href="https://j.map.baidu.com/40/2GNk">SCMS</a> 102 </p>
+		  </td>
+		  <td><a href="https://ningguomath.com/">郭　宁</a>
+		    <br>
+		    <span style="font-family: 'STFangsong', 'FangSong', sans-serif; font-size: 90%;">(哈尔滨工业大学)</span>
+		  </td>
+		  <td>
+		    <p><b>Title.</b>  Geometric presentations and torsors over affine lines </p>
+		    <p><b>Abstract.</b> Geometric presentations are an
+		    effective method for simplifying cohomological
+		    problems by reducing their relative
+		    dimension. This talk will trace the history of
+		    this technique, from Artin's “bon voisinage” to
+		    its modern applications. We will particularly
+		    focus on its relevance to the Grothendieck–Serre
+		    conjecture for reductive torsors over regular
+		    local rings. In this context, the talk will also
+		    review recent advances in the analysis of torsors
+		    over affine and projective lines. </p>
+		    </td>
+		</tr>
+
+	    <tr>
+		<td>
+		    <p>12月12日 (周五)</p>
+		    <p>16:00–17:00</p>
+					<p>SCMS 102</p>
+		</td>
+		<td><a href="https://aronheleodoro.com/">Aron Heleodoro</a><br>
+		    <span style="font-family: 'STFangsong', 'FangSong', sans-serif; font-size: 90%;">(SIMIS)</span></td>
+					<td><p><b>Title.</b> Newton Decomposition of Loop Group and Affine Character Sheaves</p>
+				<p> <b>Abstract.</b> In this talk I will explain how one can decompose the loop group associated to a connected reductive group G into parts known as Newton strata. These remarkable strata are invariant under the conjugation of LG and by passing to Levi subgroups one can reduce questions on an arbitrary stratum to questions on basic strata, which are more manageable. I will then explain how one can use these strata to define and study a very sought-after category of character sheaves for loop groups (e.g. p-adic groups or Kac—Moody groups). This is based in joint ongoing work with Xuhua He and Xinwen Zhu.</p></td>
+	    </tr>
+			  <tr>
+		<td>
+		    <p>12月16日 (周二)</p>
+		    <p>16:00–17:00</p>
+		    <p> <a href="https://j.map.baidu.com/85/Awgi">SIMIS</a> 1010 </p>
+		</td>
+		<td><p><a href="https://math.bit.edu.cn/szdw/jgml/sxx/fyy/index.htm">范洋宇</a><br>
+		  <span style="font-family: 'STFangsong', 'FangSong', sans-serif; font-size: 90%;">(北京理工大学)</span></p>
+		</td>
+		<td>
+		  <p><b>Title.</b> p-adic Gross-Zagier formulae for supersingular elliptic curves</p>
+		  <p><b>Abstract.</b>The p-adic Gross-Zagier formula — the p-adic analogue of the celebrated Gross-Zagier formula — relates the p-adic height of Heegner points to the derivative of p-adic Rankin series. It plays an essential role in the Iwasawa Main Conjecture for elliptic curves and the Birch-Swinnerton-Dyer Formula. In this talk, we report  some recent progress regarding the p-adic Gross-Zagier formulae for supersingular elliptic curves. This work is partly based on joint work with Prof. Y. Tian and Dr. J. Pan.</p>
+		</td>
+	  </tr>
+	  		<tr>
+		  <td>
+		    <p>12月24日 (周三)</p>
+		    <p> 14:00–15:00 </p>
+		    <p> <a href="https://scms.fudan.edu.cn/">SCMS</a> 106 </p>
+		  </td>
+		  <td><a href="https://www.math.unipd.it/~baldassa/index.html">Francesco Baldassarri</a>
+		    <br>
+		    <span style="font-family: 'STFangsong', 'FangSong', sans-serif; font-size: 90%;">(University of Padova)</span>
+		  </td>
+		  <td>
+		    <p><b>Title.</b>  Entire Fourier expansions on $\mathbb{Q}_p$</p>
+		    <p><b>Abstract.</b> We extend the Iwasawa theory of $p$-adic measures and the Amice--Fourier expansion to bounded uniformly continuous functions on $\mathbb{Q}_p$.</p>
+			
+			<p>We interpret the $(p,T)$-adic completion $\mathscr{D}$ of the ring $\mathbb{Z}_p\!\left[T^{1/p^\infty}\right]$ as an algebra of $\mathbb{Z}_p$-valued measures on $\mathbb{Q}_p$, via $T=\Delta_1-\Delta_0$ (Dirac masses). It contains the canonical measure
+		$$
+			\mu_{\mathrm{can}} := \lim_{n\to +\infty}
+			E(\Delta_{p^{-n}}-\Delta_0)^{p^n} \in \mathscr{D},
+		$$
+		where $E(x)\in\mathbb{Z}_{(p)}[[x]]$ denotes the Artin--Hasse logarithm. The strong $p$-adic dual of $\mathscr{D}$ is the algebra $\mathscr{C}^{\mathrm{unif}}$ of uniformly continuous functions $\mathbb{Q}_p \to \mathbb{Z}_p$. </p>
+			
+			<p>We extend the Mahler--Amice formula
+		$$
+			f(x)=\sum_{n=0}^{\infty} f^{[n]}(0)\binom{x}{n}
+     		=\sum_{n=0}^{\infty}\left(\int_{\mathbb{Z}_p} f\, T^n\right)\binom{x}{n}
+		$$
+		to $\mathbb{Q}_p$ as
+		$$
+		f(x)=\sum_{q\in S}
+		\left(\int_{\mathbb{Q}_p} f\, \mu_{\mathrm{can}}^q\right) G_q(x),
+		$$
+		where $S=\mathbb{Z}[1/p]\cap\mathbb{R}_{\ge 0}$ and $\{G_q\}_{q\in S}$ is a family of $p$-adically entire functions whose restriction to $\mathbb{Q}_p$ belongs to $\mathscr{C}^{\mathrm{unif}}$ and satisfies
+		$$
+		G_q(x+y)=\sum_{q_1+q_2=q} G_{q_1}(x)G_{q_2}(y),
+		\qquad \forall q\in S.
+		$$
+</p>
+		    </td>
+		</tr>
+
+				<tr>
+		  <td>
+		    <p>12月24日 (周三)</p>
+		    <p> 15:15-16:15 </p>
+		    <p> <a href="https://scms.fudan.edu.cn/">SCMS</a> 106 </p>
+		  </td>
+		  <td><a href="https://www.universiteitleiden.nl/en/staffmembers/peter-stevenhagen">Peter Stevenhagen</a>
+		    <br>
+		    <span style="font-family: 'STFangsong', 'FangSong', sans-serif; font-size: 90%;">(Leiden University)</span>
+		  </td>
+		  <td>
+		    <p><b>Title.</b>  Non-primitive points on elliptic curves </p>
+		    <p><b>Abstract.</b> A famous $1927$ conjecture of Emil Artin says that every nonsquare integer different from $-1$ is a primitive root modulo infinitely many primes, and that the set of these primes has some positive density. It was proved after $40$ years by Christopher Hooley, under assumption of the Generalised Riemann Hypothesis.</p>
+			<p>I will discuss the analogous question for points on elliptic curves over number fields, which goes by the name of Lang-Trotter, and focus on the phenomena that can cause the vanishing of the associated density. This is joint work with Nathan Jones (Chicago) and Francesco Pappalardi (Rome). </p>
+		    </td>
+		</tr>
+
+				<tr>
+		  <td>
+		    <p>12月24日 (周三)</p>
+		    <p> 16:30-17:30</p>
+		    <p> <a href="https://scms.fudan.edu.cn/">SCMS</a> 106 </p>
+		  </td>
+		  <td><a href="https://faculty.ustc.edu.cn/yqliang/index.jsp"> 梁永祺</a>
+		    <br>
+		    <span style="font-family: 'STFangsong', 'FangSong', sans-serif; font-size: 90%;">(中国科学技术大学)</span>
+		  </td>
+		  <td>
+		    <p><b>Title.</b> Hasse principle and Weil restriction </p>
+		    <p><b>Abstract.</b> We consider the Hasse principle for existence of rational points on algebraic varieties defined over number fields. There are many possible cohomological obstructions to the Hasse principle. We compare the etale-Baruer-Manin obstruction on Weil restrictions of a variety with respect to extensions of number fields, and prove that they can be naturally identified to each other. This is a joint work with Yang Cao. </p>
+		    </td>
+		</tr>
+			    <tr>
+		<td>
+		    <p>12月30日 (周二)</p>
+		    <p>16:00–17:00</p>
+					<p>SCMS 446</p>
+		</td>
+		<td><a href="https://www.ias.edu/scholars/mingjia-zhang">张明嘉</a><br>
+		    <span style="font-family: 'STFangsong', 'FangSong', sans-serif; font-size: 90%;">(Princeton University)</span></td>
+					<td><p><b>Title.</b> Abelian type Igusa stacks and applications</p>
+				<p> <b>Abstract.</b> Given a Shimura data, Scholze conjectures there to exist certain geometric objects (Igusa stacks), whose geometry is closely related to the Shimura varieties. I will present joint work in progress with Daniels, van Hoften and Kim on this conjecture for abelian type Shimura data. This has several applications, in particular, to showing that the construction of the local Langlands correspondence by Fargues-Scholze is compatible with more classical constructions, by Arthur, Mok and others.</p></td>
+	    </tr>
+
+		<!-- <tr> -->
+		<!--   <td>TBA (周五)</td> -->
+		<!--   <td>TBA</td> -->
+		<!--   <td><a href="https://ymsc.tsinghua.edu.cn/en/info/1033/2461.htm">Koji Shimizu</a> -->
+		<!--     <span style="font-family: 'STFangsong', 'FangSong', sans-serif; font-size: 90%;">(清华大学)</span> -->
+		<!--   </td> -->
+		<!--   <td></td> -->
+
+		<!-- <\!-- </tr> -\-> -->
+		<!-- <tr> -->
+		<!--   <td> -->
+		<!--     <p style="color:red;">12月24日 (周三)</p> -->
+		<!--     <p> 16:00–17:00 </p> -->
+		<!--   </td> -->
+		<!--   <td><a href="https://pub.math.leidenuniv.nl/~stevenhagenp/">Peter Stevenhagen</a> -->
+		<!--     <br> -->
+		<!--     <span style="font-family: 'STFangsong', 'FangSong', sans-serif; font-size: 90%;">(Universiteit Leiden)</span> -->
+		<!--   </td> -->
+		<!--   <td>TBA</td> -->
+		<!-- </tr> -->
+
+		<!-- <tr> -->
+		<!--   <td> -->
+		<!--     <p style="color:red;">12月24日 (周三)</p> -->
+		<!--     <p> 16:00–17:00 </p> -->
+		<!--   </td> -->
+		<!--   <td><a href="https://www.math.unipd.it/~baldassa/">Francesco Baldassarri</a> -->
+		<!--     <br> -->
+		<!--     <span style="font-family: 'STFangsong', 'FangSong', sans-serif; font-size: 90%;">(Università di Padova)</span> -->
+		<!--   </td> -->
+		<!--   <td>TBA</td> -->
+		<!-- </tr> -->
+
+	    </tbody>
+	</table>
+    </div>
+</body>
+</html>
