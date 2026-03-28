@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Number Theory Seminar - 2025-2026 Spring</title>
+    <title>Number Theory Seminar</title>
      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sugina-dev/latin-modern-web@1.0.1/style/latinmodern-sans.css" />
     <link rel="stylesheet" type="text/css" href="table.css">
 
@@ -273,23 +273,37 @@
 	    color: var(--primary-color);
 	}
 
-	/* Notice box */
-	.notice {
-	    background: #ebf8ff;
-	    border-left: 4px solid #4299e1;
-	    padding: 1em 1.5em;
-	    border-radius: 0 8px 8px 0;
-	    margin-bottom: 2em;
+	/* Past talks list */
+	.past-talks {
+	    list-style: none;
+	    padding: 0;
+	    display: flex;
+	    gap: 1em;
+	    flex-wrap: wrap;
 	}
 
-	.notice a {
+	.past-talks li {
+	    background: var(--card-bg);
+	    border: 1px solid var(--border-color);
+	    border-radius: 8px;
+	    transition: all 0.2s;
+	}
+
+	.past-talks li:hover {
+	    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+	    transform: translateY(-2px);
+	}
+
+	.past-talks a {
+	    display: block;
+	    padding: 0.8em 1.5em;
 	    color: var(--secondary-color);
 	    text-decoration: none;
 	    font-weight: 500;
 	}
 
-	.notice a:hover {
-	    text-decoration: underline;
+	.past-talks a:hover {
+	    color: var(--primary-color);
 	}
 
 	/* Responsive */
@@ -337,66 +351,63 @@
 	<a href="event.html">Event</a>
     </nav>
 
- 
- 
-    <div class="notice">
-	<strong>Current Seminar:</strong> Please see the <a href="seminar.html">seminar page</a> for upcoming talks.
-    </div>
 
-    <h2>2025-2026 Spring</h2>
+    <!-- Seminar -->
+    <h2>Upcoming Talks</h2>
     <table>
-	    <thead>
-		<tr>
-		  <th>时间地点</th>
-		  <th>报告人</th>
-		  <th>题目与摘要</th>
-		</tr>
-	    </thead>
-	    <tbody>
-	 
-		<!-- <tr> -->
-		<!--   <td> -->
-		<!--     <p style="color:red;">12月24日 (周三)</p> -->
-		<!--     <p> 16:00–17:00 </p> -->
-		<!--   </td> -->
-		<!--   <td><a href="https://www.math.unipd.it/~baldassa/">Francesco Baldassarri</a> -->
-		<!--     <br> -->
-		<!--     <span class="affiliation">(Università di Padova)</span> -->
-		<!--   </td> -->
-		<!--   <td>TBA</td> -->
-		<!-- </tr> -->
-
-									<tr>
-		  <td style="white-space: nowrap;">
-		    <p> 3月13日 (周五) </p>
-		    <p> 16:00–17:00 </p>
-		    <p> <a href="https://math.fudan.edu.cn/main.htm">光华楼东主楼</a> 2001 </p>
-		  </td>
-		  <td style="white-space: nowrap;">
-		    <p><a href="https://wzxmath.github.io/">吴志翔</a></p>
-		    <p> <span class="affiliation">(中国科学技术大学)</span> </p> </td>
-		  <td><p><b>Title:</b>  Breuil-Strauch conjecture for the Lubin-Tate space of dimension $1$.</p>
-		    <p> <b>Abstract:</b>  In the $p$-adic local Langlands program, the Breuil-Strauch conjecture predicts that certain representations of $\mathrm{GL}_2(\mathbb{Q}_p)$, arising from equivariant vector bundles on the one-dimensional Drinfeld space, are closely related to two-dimensional $p$-adic de Rham Galois representations. This conjecture was proved by Dospinescu-Le Bras. In this talk, we present an analogous picture for the one-dimensional Lubin-Tate space. In this setting, the cohomology of equivariant vector bundles naturally produces representations of the unit group of the non-split quaternion algebra over $\mathbb{Q}_p$, which may be viewed as the Jacquet-Langlands counterpart of $\mathrm{GL}_2(\mathbb{Q}_p)$. Using global methods introduced by Lue Pan, we explain how these representations relate to $p$-adic Galois representations and clarify certain features of the $p$-adic Jacquet-Langlands correspondence. This is joint work with Benchao Su and Zhenghui Li.</p></td>
-		</tr>
+    <thead>
+	<tr>
+	    <th>时间地点</th>
+	    <th>报告人</th>
+	    <th>题目与摘要</th>
+	</tr>
+    </thead>
 
 
 
-		<tr>
-			<td>
-				<p>3月20日 (周五)</p>
-				<p>16:00–17:00</p>
-				<p> <a href="https://math.fudan.edu.cn/main.htm">光华楼东主楼</a> 1801 </p>
-			</td>
-			<td><a>丁治国</a><br>
-				<span class="affiliation">(湖南师范大学)</span></td>
-					<td><p><b>Title.</b>  A survey on the Carlitz-Wan conjecture</p>
-				<p> <b>Abstract.</b>  The Carlitz-Wan conjecture is one of the most famous problems in the history of permutation polynomials and exceptional polynomials. In 1963, Carlitz and his student Cavior posed a special case of the Carlitz-Wan conjecture as a question. In 1991, Wan（万大庆）posed and proved in some cases a generalization of this question, which became known as the Carlitz–Wan conjecture. In 1994, Lenstra first proved the Carlitz–Wan conjecture in full generality. In 1997, Guralnick and Muller generalized the Carlitz–Wan conjecture to exceptional covers of curves. Recently, we studied the exceptional extensions of local fields, which led to different proofs of the result by Guralnick and Muller. In this talk, I will survey the history and various proofs of the Carlitz-Wan conjecture.</p></td>
-			</tr> 
-	
+    <tbody>
+    
 
 
-	    </tbody>
-	</table>
-    </div>
+	<!-- <tr>
+	    <td>
+		<p>12月30日 (周二)</p>
+		<p>16:00–17:00</p>
+				<p>SCMS 446</p>
+	    </td>
+	    <td><a href="https://www.ias.edu/scholars/mingjia-zhang">张明嘉</a><br>
+		<span class="affiliation">(Princeton University)</span></td>
+				<td><p><b>Title.</b> Abelian type Igusa stacks and applications</p>
+			<p> <b>Abstract.</b> Given a Shimura data, Scholze conjectures there to exist certain geometric objects (Igusa stacks), whose geometry is closely related to the Shimura varieties. I will present joint work in progress with Daniels, van Hoften and Kim on this conjecture for abelian type Shimura data. This has several applications, in particular, to showing that the construction of the local Langlands correspondence by Fargues-Scholze is compatible with more classical constructions, by Arthur, Mok and others.</p></td>
+	</tr> --> 
+
+
+
+
+
+
+		    <tr>
+	    <td>
+		<p>4月10日 (周五)</p>
+		<p>16:00–17:00</p>
+			<p>SCMS </p>
+	    </td>
+	    <td><a href="https://sites.google.com/site/zhaoatlogtrait/research">赵和耳</a><br>
+		<span class="affiliation">(哈尔滨工业大学数学研究院)</span></td>
+				<td><p><b>Title.</b>  </p>
+			<p> <b>Abstract.</b>  </p></td>
+	    </tr> 
+
+
+    </tbody>  
+    </table>
+
+    <!-- Past Talks -->
+    <h2>Past Talks</h2>
+    <ul class="past-talks">
+	<li><a href="2026spring.html">2025-2026 Spring</a></li>
+	<li><a href="2025autumn.html">2025-2026 Autumn</a></li>
+    </ul>
+  </div>
 </body>
 </html>

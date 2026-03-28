@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Number Theory Seminar</title>
+    <title>Number Theory Seminar - Events</title>
      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sugina-dev/latin-modern-web@1.0.1/style/latinmodern-sans.css" />
     <link rel="stylesheet" type="text/css" href="table.css">
 
@@ -133,6 +133,31 @@
 	    border-bottom-color: var(--accent-color);
 	}
 
+	/* Intro Section */
+	.intro {
+	    background: var(--card-bg);
+	    padding: 1.5em 2em;
+	    border-radius: 12px;
+	    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+	    margin-bottom: 2em;
+	    border-left: 4px solid var(--accent-color);
+	}
+
+	.intro p {
+	    margin: 0;
+	    line-height: 1.8;
+	}
+
+	.intro a {
+	    color: var(--secondary-color);
+	    text-decoration: none;
+	    font-weight: 500;
+	}
+
+	.intro a:hover {
+	    text-decoration: underline;
+	}
+
 	/* Section Headers */
 	h2 {
 	    color: var(--primary-color);
@@ -154,86 +179,60 @@
 	    border-radius: 3px;
 	}
 
-	h3 {
-	    color: var(--secondary-color);
-	    font-size: 1.3em;
-	    margin: 1.2em 0 0.6em;
-	}
-
-	/* Card Styles */
-	.card {
-	    background: var(--card-bg);
-	    padding: 1.5em 2em;
-	    border-radius: 12px;
-	    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-	    margin-bottom: 1.5em;
-	    border: 1px solid var(--border-color);
-	}
-
-	.card p {
-	    margin: 0.8em 0;
-	    line-height: 1.8;
-	}
-
-	.card p:first-child {
-	    margin-top: 0;
-	}
-
-	.card p:last-child {
-	    margin-bottom: 0;
-	}
-
-	/* Intro/About Section */
-	.about-section {
-	    background: var(--card-bg);
-	    padding: 2em;
-	    border-radius: 12px;
-	    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-	    margin-bottom: 2em;
-	    border-left: 4px solid var(--accent-color);
-	}
-
-	.about-section p {
-	    margin: 1em 0;
-	    line-height: 1.9;
-	}
-
-	.about-section a {
-	    color: var(--accent-color);
-	    text-decoration: none;
-	    font-weight: 500;
-	}
-
-	.about-section a:hover {
-	    text-decoration: underline;
-	}
-
-	/* Feature Links */
-	.feature-links {
+	/* Event Cards */
+	.event-list {
 	    display: grid;
-	    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	    gap: 1em;
-	    margin-top: 1.5em;
+	    gap: 1.5em;
 	}
 
-	.feature-link {
-	    display: block;
+	.event-card {
 	    background: var(--card-bg);
-	    padding: 1em 1.5em;
-	    border-radius: 8px;
-	    text-align: center;
+	    border-radius: 12px;
+	    padding: 1.5em 2em;
+	    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 	    border: 1px solid var(--border-color);
-	    color: var(--secondary-color);
-	    font-weight: 500;
 	    transition: all 0.2s;
 	}
 
-	.feature-link:hover {
-	    background: var(--primary-color);
-	    color: white;
-	    text-decoration: none;
+	.event-card:hover {
+	    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 	    transform: translateY(-2px);
-	    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+	}
+
+	.event-title {
+	    font-size: 1.3em;
+	    font-weight: 600;
+	    color: var(--primary-color);
+	    margin-bottom: 0.5em;
+	}
+
+	.event-title a {
+	    color: var(--primary-color);
+	    text-decoration: none;
+	}
+
+	.event-title a:hover {
+	    text-decoration: underline;
+	}
+
+	.event-meta {
+	    display: flex;
+	    gap: 1.5em;
+	    flex-wrap: wrap;
+	    color: #718096;
+	    font-size: 0.95em;
+	    margin-bottom: 0.8em;
+	}
+
+	.event-meta span {
+	    display: flex;
+	    align-items: center;
+	    gap: 0.3em;
+	}
+
+	.event-description {
+	    color: var(--text-color);
+	    line-height: 1.7;
 	}
 
 	/* Responsive */
@@ -271,23 +270,28 @@
     </div>
 
     <nav class="nav">
-	<a href="index.html" class="active">Home</a>
+	<a href="index.html">Home</a>
 	<a href="seminar.html">Seminar</a>
-	<a href="event.html">Event</a>
+	<a href="event.html" class="active">Event</a>
     </nav>
 
-    <h2>关于我们 About Us</h2>
-    <div class="about-section">
-	<p>复旦数论讨论班是由来自  SMS, SCMS, 和SIMIS的    <div class="intro">
-	<p><strong></strong> <a href="https://scms.fudan.edu.cn/info/1932/6149.htm">陈苗芬</a>, <a href="https://yichenqin.net/">秦翊宸</a>, <a href="https://rufeir.github.io/Rufei_Ren/">任汝飞</a>, <a href="https://wanghaining11.github.io/">王海宁</a>, <a href="https://wangyupeng-wyp.github.io">王宇鹏</a>, <a href="https://sites.google.com/view/ylf/home">易灵飞</a>, <a href="https://zhangdingxin.gitlab.io/math/">张鼎新</a></p>
-    </div> 联合主办的数论学术交流平台。本讨论班旨在促进数论领域的学术交流与合作，邀请国内外优秀学者分享最新研究成果，涵盖解析数论、代数数论、算术几何、自守形式等多个方向。</p>
-	 
-
+    <h2>学术会议</h2>
+    
+    <div class="event-list">
+	<div class="event-card">
+	    <div class="event-title">
+		<a href="fudan2025-conference.html">复旦2025数论会议</a>
+	    </div>
+	    <div class="event-meta">
+		<span>📅 2025年11月28日 - 12月1日</span>
+		<span>📍 复旦大学，上海</span>
+	    </div>
+	    <div class="event-description">
+		<p><strong>2025 Fudan University Conference on Analytic Number Theory</strong></p>
+		<p>邀请报告人：陈华一（西湖大学）、方金辉（南京师范大学）、胡悦科（清华大学）、黄炳荣（山东大学）、林永晓（山东大学）、潘颢（南京财经大学）、齐治（浙江大学）、吴涵（中国科技大学）、张欣（香港大学）</p>
+	    </div>
+	</div>
     </div>
-	
-
-
-
   </div>
 </body>
 </html>
