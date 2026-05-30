@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复旦大学数论与算术几何学术报告会 | Fudan Workshop on Number Theory and Arithmetic Geometry</title>
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sugina-dev/latin-modern-web@1.0.1/style/latinmodern-sans.css" />
+    <link rel="stylesheet" type="text/css" href="../table.css">
+
+    <script>
+	MathJax = {
+	    tex: {
+		inlineMath: [['$', '$'], ['\\(', '\\)']],
+		displayMath: [['$$', '$$'], ['\\[', '\\]']],
+		processEscapes: true,
+		processEnvironments: true
+	    },
+	    options: {
+		skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+	    }
+	};
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <style>
+	:root {
+	    --primary-color: #1a365d;
+	    --secondary-color: #2c5282;
+	    --accent-color: #d69e2e;
+	    --bg-color: #f7fafc;
+	    --card-bg: #ffffff;
+	    --text-color: #2d3748;
+	    --border-color: #e2e8f0;
+	}
+
+	* {
+	    box-sizing: border-box;
+	}
+
+	body {
+	    margin: 0;
+	    padding: 0;
+	    background-color: var(--bg-color);
+	    color: var(--text-color);
+	}
+
+	.content {
+	    margin: auto;
+	    padding: 0 1.5em 2em;
+	    max-width: 70em;
+	    line-height: 1.6;
+	    font-family: Latin Modern Sans, Helvetica, Arial, Georgia, "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", sans-serif;
+	}
+
+	/* Header Section */
+	.header {
+	    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+	    color: white;
+	    padding: 2em 1.5em;
+	    margin: 0 -1.5em 2em;
+	    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+	}
+
+	.header-top {
+	    display: flex;
+	    align-items: center;
+	    gap: 1.5em;
+	    margin-bottom: 1em;
+	}
+
+	.logo {
+	    width: 80px;
+	    height: 80px;
+	    object-fit: contain;
+	    background: white;
+	    border-radius: 12px;
+	    padding: 8px;
+	    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	}
+
+	.header-title {
+	    flex: 1;
+	}
+
+	.header h1 {
+	    margin: 0 0 0.3em 0;
+	    font-size: 2.2em;
+	    font-weight: 600;
+	    letter-spacing: -0.5px;
+	}
+
+	.header-subtitle {
+	    font-size: 1.1em;
+	    opacity: 0.9;
+	    margin: 0;
+	}
+
+	.header-subtitle a {
+	    color: var(--accent-color);
+	    text-decoration: none;
+	    font-weight: 500;
+	    transition: opacity 0.2s;
+	}
+
+	.header-subtitle a:hover {
+	    opacity: 0.8;
+	    text-decoration: underline;
+	}
+
+	/* Navigation */
+	.nav {
+	    background: var(--card-bg);
+	    padding: 1em 1.5em;
+	    margin: 0 -1.5em 2em;
+	    border-bottom: 1px solid var(--border-color);
+	    display: flex;
+	    gap: 2em;
+	    flex-wrap: wrap;
+	}
+
+	.nav a {
+	    color: var(--secondary-color);
+	    text-decoration: none;
+	    font-weight: 500;
+	    padding: 0.5em 0;
+	    border-bottom: 2px solid transparent;
+	    transition: all 0.2s;
+	}
+
+	.nav a:hover, .nav a.active {
+	    color: var(--primary-color);
+	    border-bottom-color: var(--accent-color);
+	}
+
+	/* Section Headers */
+	h2 {
+	    color: var(--primary-color);
+	    font-size: 1.6em;
+	    margin: 1.5em 0 0.8em;
+	    padding-bottom: 0.4em;
+	    border-bottom: 2px solid var(--border-color);
+	    display: flex;
+	    align-items: center;
+	    gap: 0.5em;
+	}
+
+	h2::before {
+	    content: "";
+	    display: inline-block;
+	    width: 6px;
+	    height: 1.2em;
+	    background: var(--accent-color);
+	    border-radius: 3px;
+	}
+
+	h3 {
+	    color: var(--secondary-color);
+	    font-size: 1.3em;
+	    margin: 1.5em 0 0.8em;
+	}
+
+	/* Info Box */
+	.info-box {
+	    background: var(--card-bg);
+	    padding: 1.5em 2em;
+	    border-radius: 12px;
+	    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+	    margin-bottom: 2em;
+	    border-left: 4px solid var(--accent-color);
+	}
+
+	.info-box p {
+	    margin: 0.5em 0;
+	}
+
+	.info-box strong {
+	    color: var(--primary-color);
+	}
+
+	/* Schedule Table */
+	table {
+	    width: 100%;
+	    border-collapse: separate;
+	    border-spacing: 0;
+	    background: var(--card-bg);
+	    border-radius: 12px;
+	    overflow: hidden;
+	    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+	    margin-bottom: 2em;
+	}
+
+	thead {
+	    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+	    color: white;
+	}
+
+	th {
+	    padding: 1em 1.2em;
+	    text-align: left;
+	    font-weight: 600;
+	    font-size: 0.95em;
+	    text-transform: uppercase;
+	    letter-spacing: 0.5px;
+	    color: var(--text-color);
+	}
+
+	td {
+	    padding: 1em 1.2em;
+	    vertical-align: top;
+	    border-bottom: 1px solid var(--border-color);
+	}
+
+	tbody tr:hover {
+	    background-color: #f8fafc;
+	}
+
+	tbody tr:last-child td {
+	    border-bottom: none;
+	}
+
+	.time-col {
+	    width: 25%;
+	    white-space: nowrap;
+	}
+
+	.speaker-col {
+	    width: 20%;
+	}
+
+	.title-col {
+	    width: 55%;
+	}
+
+	/* Speaker List */
+	.speaker-grid {
+	    display: grid;
+	    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	    gap: 1em;
+	    background: var(--card-bg);
+	    padding: 1.5em;
+	    border-radius: 12px;
+	    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+	    margin-bottom: 2em;
+	}
+
+	.speaker-item {
+	    padding: 0.5em;
+	}
+
+	.speaker-name {
+	    font-weight: 600;
+	    color: var(--primary-color);
+	}
+
+	.speaker-affiliation {
+	    color: #718096;
+	    font-size: 0.9em;
+	}
+
+	/* Abstract Section */
+	.abstract-section {
+	    background: var(--card-bg);
+	    padding: 1.5em 2em;
+	    border-radius: 12px;
+	    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+	    margin-bottom: 1.5em;
+	}
+
+	.abstract-title {
+	    font-weight: 600;
+	    color: var(--primary-color);
+	    margin-bottom: 0.5em;
+	}
+
+	.talk-title {
+	    font-style: italic;
+	    color: var(--secondary-color);
+	    margin-bottom: 0.8em;
+	}
+
+	/* Back Link */
+	.back-link {
+	    display: inline-block;
+	    margin-top: 1em;
+	    color: var(--secondary-color);
+	    text-decoration: none;
+	}
+
+	.back-link:hover {
+	    text-decoration: underline;
+	}
+
+	/* Responsive */
+	@media (max-width: 768px) {
+	    .header-top {
+		flex-direction: column;
+		text-align: center;
+	    }
+
+	    .logo {
+		width: 60px;
+		height: 60px;
+	    }
+
+	    .header h1 {
+		font-size: 1.6em;
+	    }
+
+	    .nav {
+		justify-content: center;
+	    }
+
+	    th, td {
+		padding: 0.8em;
+		font-size: 0.9em;
+	    }
+
+	    .speaker-grid {
+		grid-template-columns: 1fr;
+	    }
+	}
+    </style>
+</head>
+<body>
+  <div class="content">
+    <div class="header">
+	<div class="header-top">
+	    <img src="../logo.png" alt="Logo" class="logo">
+	    <div class="header-title">
+		<h1>数论讨论班</h1>
+		<p class="header-subtitle">A joint seminar of <a href="https://math.fudan.edu.cn/main.htm">SMS</a>, <a href="https://scms.fudan.edu.cn/">SCMS</a> and <a href="https://www.simis.cn/">SIMIS</a></p>
+	    </div>
+	</div>
+    </div>
+
+    <nav class="nav">
+	<a href="../index.html">Home</a>
+	<a href="../seminar.html">Seminar</a>
+	<a href="../event.html">Event</a>
+    </nav>
+
+    <h2>复旦大学数论与算术几何学术报告会</h2>
+    <p style="font-size: 1.1em; color: var(--secondary-color); margin-top: -0.5em;">Fudan Workshop on Number Theory and Arithmetic Geometry</p>
+
+    <div class="info-box">
+	<p><strong>时间：</strong>2026年6月5日（周五）</p>
+	<p><strong>地点：</strong>复旦大学光华楼东主楼 1601</p>
+	<p><strong>主办单位：</strong>复旦大学</p>
+	<p><strong>联系人：</strong>任汝飞 (<a href="mailto:rufeir@fudan.edu.cn">rufeir@fudan.edu.cn</a>)</p>
+    </div>
+
+    <h3>报告人 Speakers</h3>
+    <div class="speaker-grid">
+	<div class="speaker-item">
+	    <div class="speaker-name">闵钰</div>
+	    <div class="speaker-affiliation">香港科技大学</div>
+	</div>
+	<div class="speaker-item">
+	    <div class="speaker-name">罗渝</div>
+	    <div class="speaker-affiliation">威斯康星大学麦迪逊分校</div>
+	</div>
+	<div class="speaker-item">
+	    <div class="speaker-name">白瑞祺</div>
+	    <div class="speaker-affiliation">中国科学院晨兴数学中心</div>
+	</div>
+	<div class="speaker-item">
+	    <div class="speaker-name">Sean Zhu</div>
+	    <div class="speaker-affiliation">亚利桑那大学</div>
+	</div>
+    </div>
+
+    <h3>组织委员会 Organizing Committee</h3>
+    <div class="info-box">
+	<p>陈苗芬、秦翊宸、任汝飞、王海宁、王宇鹏、易灵飞、张鼎新</p>
+    </div>
+
+    <h3>日程安排 Schedule</h3>
+    <table>
+	<thead>
+	    <tr>
+		<th class="time-col">时间</th>
+		<th class="speaker-col">报告人</th>
+		<th class="title-col">报告题目</th>
+	    </tr>
+	</thead>
+	<tbody>
+	    <tr>
+		<td colspan="3" style="background-color: #edf2f7; font-weight: 600;">6月5日（周五）上午</td>
+	    </tr>
+	    <tr>
+		<td>10:00–11:00</td>
+		<td>闵钰</td>
+		<td>Congruences of syntomic cohomology</td>
+	    </tr>
+	    <tr>
+		<td>11:20–12:20</td>
+		<td>罗渝</td>
+		<td>Arithmetic Siegel--Weil formula and Kudla--Rapoport conjecture</td>
+	    </tr>
+	    <tr>
+		<td colspan="3" style="text-align: center; color: #718096;">午餐 Lunch</td>
+	    </tr>
+	    <tr>
+		<td colspan="3" style="background-color: #edf2f7; font-weight: 600;">6月5日（周五）下午</td>
+	    </tr>
+	    <tr>
+		<td>14:30–15:30</td>
+		<td>白瑞祺</td>
+		<td>Arithmetic level-raising for \(U(2r,1)\) via higher Chow cycles</td>
+	    </tr>
+	    <tr>
+		<td>16:00–17:00</td>
+		<td>Sean Zhu</td>
+		<td>Symmetric Power L-functions for Lower Deformation Families of Toric Exponential Sums</td>
+	    </tr>
+	</tbody>
+    </table>
+
+    <h3>报告题目摘要 Titles & Abstracts</h3>
+
+    <div class="abstract-section">
+	<div class="abstract-title">报告人：闵钰（香港科技大学数学系）</div>
+	<div class="talk-title">题目：Congruences of syntomic cohomology</div>
+	<p>摘要：Let L be a finite extension of Q_p and G_K be its absolute Galois group. Given two crystalline Z_p representations of G_K, we are interested in the relation between congruences of the two representations and congruences of their Bloch-Kato Selmer groups. Under certain assumptions, we do not obtain enough information from the congruences of the representations, and will consider instead the reductions of the prismatic F-crystals attached to these crystalline representations and explain how these reductions induce congruences of their first syntomic cohomology groups, which can be regarded as refinements of local Bloch-Kato Selmer groups.</p>
+    </div>
+
+    <div class="abstract-section">
+	<div class="abstract-title">报告人：罗渝（威斯康星大学麦迪逊分校数学系）</div>
+	<div class="talk-title">题目：Arithmetic Siegel--Weil formula and Kudla--Rapoport conjecture</div>
+	<p>摘要：Kudla—Rapoport conjecture predicts a precise identity between the arithmetic intersection number of special cycles on unitary Rapoport-Zink spaces and the derivative of local representation densities of hermitian forms. This result was proven by C. Li and W. Zhang in 2022 at the hyperspecial level. In this talk, I will discuss and motivate the conjecture and its global counterpart. If time permits, I will present a new proof of the conjecture using a global method.</p>
+    </div>
+
+    <div class="abstract-section">
+	<div class="abstract-title">报告人：白瑞祺（中国科学院晨兴数学中心）</div>
+	<div class="talk-title">题目：Arithmetic level-raising for \(U(2r,1)\) via higher Chow cycles</div>
+	<p>摘要：Tracing back to Ribet's celebrated level-raising theorem for modular forms, presented at the 1983 ICM, a series of works by recent mathematicians—including Lu-Tian, Liu-Tian-Xiao-Zhang, Zhu, Wang, and others—have shown that one can obtain certain level-raising results for automorphic representations by establishing the surjectivity of the cycle class map for Shimura varieties. More precisely, under some generic conditions, cycles arising from the supersingular locus of the mod p fiber generate the non-Eisenstein parts of the cohomology of Shimura varieties. Inspired by the work of Rong Zhou, the above philosophy also extends to higher Chow cycles. In this talk, I will focus on the mod p fiber of \(U(2r,1)\) Shimura varieties, where r is an odd inner prime. We exhibit higher Chow cycles on the supersingular locus and prove the surjectivity of the cycle class map for the higher Chow group under some generic conditions. A key ingredient of the proof is to establish a strong form of Ihara's lemma for unitary groups. This work is joint with Hao Fu.</p>
+    </div>
+
+    <div class="abstract-section">
+	<div class="abstract-title">报告人：Sean Zhu（亚利桑那大学数学系）</div>
+	<div class="talk-title">题目：Symmetric Power L-functions for Lower Deformation Families of Toric Exponential Sums</div>
+	<p>摘要：In 1989, Adolphson and Sperber established that for non-degenerate exponential sums, the associated L-function is a polynomial whose precise degree is determined by the volume of its Newton polyhedron. Building on this work, Haessig and Sperber (2014) developed a framework to analyze arbitrary algebraic families of lower order deformations of non-degenerate toric exponential sums, computing their relative cohomology and establishing sharp estimates for their relative Frobenius map. This talk explores the associated symmetric power L-functions within this framework, detailing their construction and the p-adic cohomological methods that establish the main structural theorems for these families.</p>
+    </div>
+
+    <a href="../event.html" class="back-link">← 返回会议列表 Back to Events</a>
+  </div>
+</body>
+</html>
