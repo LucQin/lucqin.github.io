@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Number Theory Seminar</title>
+    <title>Number Theory Seminar - 2026-2027 Autumn</title>
      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sugina-dev/latin-modern-web@1.0.1/style/latinmodern-sans.css" />
     <link rel="stylesheet" type="text/css" href="../table.css">
 
@@ -273,37 +273,23 @@
 	    color: var(--primary-color);
 	}
 
-	/* Past talks list */
-	.past-talks {
-	    list-style: none;
-	    padding: 0;
-	    display: flex;
-	    gap: 1em;
-	    flex-wrap: wrap;
+	/* Notice box */
+	.notice {
+	    background: #ebf8ff;
+	    border-left: 4px solid #4299e1;
+	    padding: 1em 1.5em;
+	    border-radius: 0 8px 8px 0;
+	    margin-bottom: 2em;
 	}
 
-	.past-talks li {
-	    background: var(--card-bg);
-	    border: 1px solid var(--border-color);
-	    border-radius: 8px;
-	    transition: all 0.2s;
-	}
-
-	.past-talks li:hover {
-	    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-	    transform: translateY(-2px);
-	}
-
-	.past-talks a {
-	    display: block;
-	    padding: 0.8em 1.5em;
+	.notice a {
 	    color: var(--secondary-color);
 	    text-decoration: none;
 	    font-weight: 500;
 	}
 
-	.past-talks a:hover {
-	    color: var(--primary-color);
+	.notice a:hover {
+	    text-decoration: underline;
 	}
 
 	/* Responsive */
@@ -352,58 +338,34 @@
     </nav>
 
 
-    <!-- Seminar -->
-    <h2>Upcoming Talks</h2>
+    <h2>2026-2027 Autumn</h2>
     <table>
-    <thead>
-	<tr>
-	    <th>时间地点</th>
-	    <th>报告人</th>
-	    <th>题目与摘要</th>
-	</tr>
-    </thead>
+	    <thead>
+		<tr>
+		  <th>时间地点</th>
+		  <th>报告人</th>
+		  <th>题目与摘要</th>
+		</tr>
+	    </thead>
+	    <tbody>
 
+		<tr>
+		    <td style="white-space: nowrap;">
+			<p>9月11日 (周五) </p>
+			<p> 15:00–17:00 </p>
+			<p> <a href="https://math.fudan.edu.cn/main.htm">光华楼东主楼</a> 1601 </p>
+		    </td>
+		    <td style="white-space: nowrap;">
+			<p>吉泽坤</p>
+			<p> <span class="affiliation">（中国科学技术大学）</span> </p> </td>
+		    <td>
+			<p><b>Title:</b> Periods and de Rham-Betti Groups of Abelian Varieties.</p>
+			<p><b>Abstract:</b> The theory of de Rham-Betti (dRB) structures and groups was introduced by André to study polynomial relations among the periods of smooth projective varieties over $\overline{\mathbb{Q}}$, within the framework of Grothendieck's period conjecture. In this talk, I will focus on the case of abelian varieties. Much of our current knowledge about their dRB structures relies on Wüstholz's powerful Analytic Subgroup Theorem. I will explain both the role of this theorem and its limitations in detecting relations among periods. In the second part of the talk, inspired by the work of Kreutz, Shen, and Vial, I will outline a strategy for determining the dRB groups of type IV abelian fourfolds, despite our limited knowledge of the relations among their periods. This talk is based on the preprint https://arxiv.org/abs/2607.23171</p>
+		    </td>
+		</tr>
 
-
-    <tbody>
-
-    <tr>
-        <td style="white-space: nowrap;">
-            <p>9月18日（周五）</p>
-            <p>15:00–16:30</p>
-            <p><a href="https://math.fudan.edu.cn/main.htm">光华楼东主楼</a> 2001</p>
-        </td>
-        <td style="white-space: nowrap;">
-            <p><a href="https://yijunyuan.github.io/">袁轶君</a></p>
-            <p><span class="affiliation">（西湖大学）</span></p>
-        </td>
-        <td>
-            <p><b>Title:</b> Formalization of non-Archimedean functional analysis</p>
-            <p><b>Abstract:</b> In this talk, I will introduce the formalization of the foundations of non-Archimedean functional analysis in Lean 4. This work includes the basic properties of spherical completeness, examples and non-examples such as the field $\mathbb{C}_p$ of p-adic complex numbers. As applications, we formalize Hahn-Banach extension theorem and the spherical completion for non-Archimedean Banach spaces. If time permits, I will also talk about how formalization strengthen our trust on mathematical proofs in the era of AI.</p>
-        </td>
-    </tr>
-    <tr>
-        <td style="white-space: nowrap;">
-            <p>10月16日（周五）</p>
-            <p>16:00–17:00</p>
-            <p>SCMS，地点待定</p>
-        </td>
-        <td style="white-space: nowrap;">
-            <p><a href="https://sharkoko.space/">林中一攀</a></p>
-            <p><span class="affiliation">（同济大学）</span></p>
-        </td>
-        <td><p><b>Title:</b> TBA</p></td>
-    </tr>
-    </tbody>  
-    </table>
-
-    <!-- Past Talks -->
-    <h2>Past Talks</h2>
-    <ul class="past-talks">
-	<li><a href="2026autumn.html">2026-2027 Autumn</a></li>
-	<li><a href="2026spring.html">2025-2026 Spring</a></li>
-	<li><a href="2025autumn.html">2025-2026 Autumn</a></li>
-    </ul>
-  </div>
+	    </tbody>
+	</table>
+    </div>
 </body>
 </html>
