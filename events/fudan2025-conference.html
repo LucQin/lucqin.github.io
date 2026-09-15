@@ -53,66 +53,11 @@
 	    font-family: Latin Modern Sans, Helvetica, Arial, Georgia, "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", sans-serif;
 	}
 
-	/* Header Section */
-	.header {
-	    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-	    color: white;
-	    padding: 2em 1.5em;
-	    margin: 0 -1.5em 2em;
-	    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-	}
-
-	.header-top {
-	    display: flex;
-	    align-items: center;
-	    gap: 1.5em;
-	    margin-bottom: 1em;
-	}
-
-	.logo {
-	    width: 80px;
-	    height: 80px;
-	    object-fit: contain;
-	    background: white;
-	    border-radius: 12px;
-	    padding: 8px;
-	    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-	}
-
-	.header-title {
-	    flex: 1;
-	}
-
-	.header h1 {
-	    margin: 0 0 0.3em 0;
-	    font-size: 2.2em;
-	    font-weight: 600;
-	    letter-spacing: -0.5px;
-	}
-
-	.header-subtitle {
-	    font-size: 1.1em;
-	    opacity: 0.9;
-	    margin: 0;
-	}
-
-	.header-subtitle a {
-	    color: var(--accent-color);
-	    text-decoration: none;
-	    font-weight: 500;
-	    transition: opacity 0.2s;
-	}
-
-	.header-subtitle a:hover {
-	    opacity: 0.8;
-	    text-decoration: underline;
-	}
-
 	/* Navigation */
 	.nav {
 	    background: var(--card-bg);
 	    padding: 1em 1.5em;
-	    margin: 0 -1.5em 2em;
+	    margin: 1.2em -1.5em 2em;
 	    border-bottom: 1px solid var(--border-color);
 	    display: flex;
 	    gap: 2em;
@@ -176,6 +121,89 @@
 
 	.info-box strong {
 	    color: var(--primary-color);
+	}
+
+	/* Conference Hero */
+	.conf-hero {
+	    display: flex;
+	    gap: 2.5em;
+	    align-items: center;
+	    background: linear-gradient(120deg, #16294a 0%, var(--primary-color) 45%, var(--secondary-color) 100%);
+	    color: white;
+	    border-radius: 16px;
+	    padding: 2.5em 2.8em;
+	    margin-bottom: 2em;
+	    box-shadow: 0 10px 28px rgba(26,54,93,0.30);
+	}
+
+	.conf-hero-text {
+	    flex: 1;
+	    min-width: 0;
+	}
+
+	.conf-kicker {
+	    display: inline-block;
+	    font-size: 0.82em;
+	    letter-spacing: 2.5px;
+	    text-transform: uppercase;
+	    color: var(--accent-color);
+	    font-weight: 600;
+	    margin-bottom: 0.9em;
+	}
+
+	.conf-hero h2 {
+	    color: white;
+	    border: none;
+	    margin: 0 0 0.2em 0;
+	    padding: 0;
+	    font-size: 2.1em;
+	    letter-spacing: -0.5px;
+	    display: block;
+	    line-height: 1.15;
+	}
+
+	.conf-hero h2::before {
+	    display: none;
+	}
+
+	.conf-title-cn {
+	    font-size: 1.2em;
+	    opacity: 0.92;
+	    margin: 0 0 1.4em 0;
+	}
+
+	.conf-badges {
+	    display: flex;
+	    gap: 0.7em;
+	    flex-wrap: wrap;
+	    margin-bottom: 1.2em;
+	}
+
+	.conf-badge {
+	    display: inline-flex;
+	    align-items: center;
+	    gap: 0.45em;
+	    background: rgba(255,255,255,0.12);
+	    border: 1px solid rgba(255,255,255,0.25);
+	    padding: 0.45em 1em;
+	    border-radius: 999px;
+	    font-size: 0.92em;
+	}
+
+	.conf-contact {
+	    font-size: 0.92em;
+	    opacity: 0.85;
+	    margin: 0;
+	    line-height: 1.8;
+	}
+
+	.conf-contact a {
+	    color: var(--accent-color);
+	    text-decoration: none;
+	}
+
+	.conf-contact a:hover {
+	    text-decoration: underline;
 	}
 
 	/* Schedule Table */
@@ -293,21 +321,21 @@
 
 	/* Responsive */
 	@media (max-width: 768px) {
-	    .header-top {
+	    .nav {
+		justify-content: center;
+	    }
+
+	    .conf-hero {
 		flex-direction: column;
+		padding: 2em 1.5em;
 		text-align: center;
 	    }
 
-	    .logo {
-		width: 60px;
-		height: 60px;
+	    .conf-hero h2 {
+		font-size: 1.5em;
 	    }
 
-	    .header h1 {
-		font-size: 1.6em;
-	    }
-
-	    .nav {
+	    .conf-badges {
 		justify-content: center;
 	    }
 
@@ -324,30 +352,26 @@
 </head>
 <body>
   <div class="content">
-    <div class="header">
-	<div class="header-top">
-	    <img src="../logo.png" alt="Logo" class="logo">
-	    <div class="header-title">
-		<h1>数论讨论班</h1>
-		<p class="header-subtitle">A joint seminar of <a href="https://math.fudan.edu.cn/main.htm">SMS</a>, <a href="https://scms.fudan.edu.cn/">SCMS</a> and <a href="https://www.simis.cn/">SIMIS</a></p>
-	    </div>
-	</div>
-    </div>
-
     <nav class="nav">
 	<a href="../index.html">Home</a>
 	<a href="../seminar/seminar.html">Seminar</a>
-	<a href="../events/event.html">Event</a>
+	<a href="../events/event.html" class="active">Event</a>
     </nav>
 
-    <h2>复旦2025数论会议</h2>
-    <p style="font-size: 1.1em; color: var(--secondary-color); margin-top: -0.5em;">2025 Fudan University Conference on Analytic Number Theory</p>
-
-    <div class="info-box">
-	<p><strong>时间：</strong>2025年11月28日 - 12月1日</p>
-	<p><strong>地点：</strong>复旦大学光华楼东主楼1601、2001</p>
-	<p><strong>主办单位：</strong>复旦大学</p>
-	<p><strong>联系人：</strong>任汝飞 (rufeir@fudan.edu.cn)</p>
+    <div class="conf-hero">
+	<div class="conf-hero-text">
+	    <span class="conf-kicker">Fudan · 2025</span>
+	    <h2>复旦2025数论会议</h2>
+	    <p class="conf-title-cn">2025 Fudan University Conference on Analytic Number Theory</p>
+	    <div class="conf-badges">
+		<span class="conf-badge">📅 2025年11月28日 - 12月1日</span>
+		<span class="conf-badge">📍 复旦大学光华楼东主楼 1601、2001</span>
+	    </div>
+	    <p class="conf-contact">
+		主办单位：复旦大学<br>
+		联系人：任汝飞 <a href="mailto:rufeir@fudan.edu.cn">rufeir@fudan.edu.cn</a>
+	    </p>
+	</div>
     </div>
 
     <h3>邀请报告人 Speakers</h3>
