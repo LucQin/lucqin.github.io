@@ -312,9 +312,37 @@
 		justify-content: center;
 	    }
 
-	    th, td {
-		padding: 0.8em;
-		font-size: 0.9em;
+	    table, tbody, tr, td {
+		display: block;
+		width: 100% !important;
+		box-sizing: border-box;
+	    }
+
+	    thead {
+		display: none;
+	    }
+
+	    tbody tr {
+		border-bottom: 2px solid var(--border-color);
+	    }
+
+	    tbody tr:last-child {
+		border-bottom: none;
+	    }
+
+	    td {
+		border-bottom: none;
+		white-space: normal !important;
+		padding: 0.4em 1em;
+		font-size: 0.95em;
+	    }
+
+	    td:first-child {
+		padding-top: 1em;
+	    }
+
+	    td:last-child {
+		padding-bottom: 1em;
 	    }
 	}
     </style>
